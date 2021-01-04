@@ -82,7 +82,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'social_django.context_processors.backends',
                 'social_django.context_processors.login_redirect',
-            ],
+            ]
         },
     },
 ]
@@ -162,5 +162,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 # SOCIAL AUTHS
-SOCIAL_AUTH_GITHUB_KEY = env('SOCIAL_AUTH_GITHUB_KEY')
-SOCIAL_AUTH_GITHUB_SECRET = env('SOCIAL_AUTH_GITHUB_SECRET')
+# SOCIAL_AUTH_GITHUB_KEY = env('SOCIAL_AUTH_GITHUB_KEY')
+# SOCIAL_AUTH_GITHUB_SECRET = env('SOCIAL_AUTH_GITHUB_SECRET')
+SOCIAL_AUTH_GITHUB_KEY = '8749832797892'
+SOCIAL_AUTH_GITHUB_SECRET = 'r3438789873'
