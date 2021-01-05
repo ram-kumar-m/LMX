@@ -1,0 +1,33 @@
+body {
+    background-color: #5f606b;
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    color: rebeccapurple;
+    font-size: 22px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 35px;
+    text-align: justify;
+}
+
+::-webkit-scrollbar {
+    width: 25px;
+}
+
+::-webkit-scrollbar-track {
+    border: 7px solid #232943;
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient( 45deg, #06dee1, #79ff6c);
+    border-radius: 3px;
+}
+
+#showall {
+    height: 400px;
+    overflow: auto;
+}
