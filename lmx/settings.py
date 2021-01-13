@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     # third party apps
     'social_django',
     'crispy_forms',
-    'django_seed',
 
     # My apps
     'lms.apps.LmsConfig',
@@ -163,5 +162,5 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 # SOCIAL AUTHS
-#SOCIAL_AUTH_GITHUB_KEY = env('SOCIAL_AUTH_GITHUB_KEY')
-#SOCIAL_AUTH_GITHUB_SECRET = env('SOCIAL_AUTH_GITHUB_SECRET')
+SOCIAL_AUTH_GITHUB_KEY = env('SOCIAL_AUTH_GITHUB_KEY')
+SOCIAL_AUTH_GITHUB_SECRET = env('SOCIAL_AUTH_GITHUB_SECRET')
