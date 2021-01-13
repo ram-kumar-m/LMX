@@ -4,7 +4,7 @@ from django.urls import path
 # LMS app imports
 
 from lms.views.course.course_views import (
-    CourseListView,
+    CourseListView, GradeBookHomeView, GradeBookCourseView
 )
 
 from lms.views.dashboard.student.dashboard_views import (
@@ -77,6 +77,22 @@ urlpatterns = [
         view=DashboardHomeView.as_view(),
         name="dashboard_home"
     ),
+
+    # GRADES TEACHER/INSTRUCTOR URLS
+
+    # /course/gradebookhome.html
+
+    path(
+        route="course/",
+        view=GradeBookHomeView,
+        name='gradebook-home'
+    ),
+
+    path(
+        route="course/grades",
+        view=GradeBookCourseView,
+        name='gradebook-course'
+    )
 
 ]
 
