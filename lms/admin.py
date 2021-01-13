@@ -43,9 +43,9 @@ class DummyAssignmentAdmin(admin.ModelAdmin):
     list_filter = ('student', 'title', 'grade',
                    'alloted_mark')
     
-    search_fields = ('title', 'grade',
+    search_fields = ('title', 'grade', 'student__name', 'student__email',
                    'alloted_mark')
     
-    raw_id_fields = ('student', )
+    autocomplete_fields = ('student',)
 
 admin.site.register(DummyAssignment, DummyAssignmentAdmin)
