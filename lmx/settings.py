@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     # third party apps
     'social_django',
     'crispy_forms',
+    'django_seed',
+    'django_tables2',
 
     # My apps
     'lms.apps.LmsConfig',
