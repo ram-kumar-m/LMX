@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'crispy_forms',
     'django_seed',
     'django_tables2',
-
+    'django_filters',
+    "bootstrap4",
     # My apps
     'lms.apps.LmsConfig',
 ]
