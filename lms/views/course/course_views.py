@@ -6,6 +6,10 @@ from lms.models.course_model import Course
 from lms.models.student_model import Profile
 from django.shortcuts import render, Http404, HttpResponse
 
+from django_filters import filterset
+from django_filters.views import FilterView
+from django_tables2.views import SingleTableMixin
+
 class CourseListView(ListView):
     model = Course
     context_object_name = "courses"
@@ -19,12 +23,13 @@ from django_tables2.export.views import ExportMixin
 from django_tables2.export.export import TableExport
 from lms.tables import DummyAssignmentTable
 from lms.models.dummy_model import DummyAssignment
+from lms.tables import DummyAssignmentTable, DummyAssignmentFilter
 
-
-class GradeBookCourseView(ExportMixin, SingleTableView):
+class GradeBookCourseView(ExportMixin, SingleTableMixin, FilterView):
     model = DummyAssignment
     table_class = DummyAssignmentTable
     template_name = 'lms/course/gradebook/course_gradebook.html'
+    filterset_class  = DummyAssignmentFilter
 
 
 

@@ -24,3 +24,4 @@ urllib3==1.26.2
 django_seed
 django-tables2
 tablib
+django-filter
