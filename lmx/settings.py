@@ -50,6 +50,9 @@ INSTALLED_APPS = [
 
     # My apps
     'lms.apps.LmsConfig',
+
+    'django_filters',
+    'bootstrap4',
 ]
 
 AUTHENTICATION_BACKENDS = [
@@ -166,3 +169,5 @@ EMAIL_USE_TLS = True
 # SOCIAL AUTHS
 #SOCIAL_AUTH_GITHUB_KEY = env('SOCIAL_AUTH_GITHUB_KEY')
 #SOCIAL_AUTH_GITHUB_SECRET = env('SOCIAL_AUTH_GITHUB_SECRET')
+# SOCIAL_AUTH_GITHUB_KEY = '89083kljljlkjfs'
+# SOCIAL_AUTH_GITHUB_SECRET = 'klj4jk34j3kjkl'

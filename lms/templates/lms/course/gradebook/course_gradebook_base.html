@@ -86,7 +86,21 @@
       </div>
       {% endblock messages %}
 
-   
+
+<!--ADD THE EXPORT PATH HERE @ href-->
+    {% load querystring from django_tables2 %}
+    <nav class="navbar navbar-light bg-light" style="background-color: #e3f2fd;">
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
+        <a href="{% querystring '_export'='csv' %}">
+            <button class="btn btn-outline-success" type="button">Export Table(.csv)</button>
+        </a>
+    </nav>
+
+
     {% block content %}
     {% endblock content %}
 
