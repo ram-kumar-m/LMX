@@ -6,7 +6,8 @@ from django.urls import path
 from lms.views.course.course_views import (
     CourseListView,
     # GradeBookHomeView, 
-    GradeBookCourseView
+    GradeBookCourseView,
+    table_download
 )
 
 from lms.views.dashboard.student.dashboard_views import (
@@ -94,7 +95,10 @@ urlpatterns = [
         route="course/grades",
         view=GradeBookCourseView.as_view(),
         name='gradebook-course'
-    )
+    ),
+
+    # path to download csv file
+    path('_export=csv', table_download) # now I need to add a download button linking this url
 
 ]
 

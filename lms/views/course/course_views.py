@@ -5,7 +5,11 @@ from django_filters import filterset
 # Blog application imports.
 from lms.models.course_model import Course
 from lms.models.student_model import Profile
-# from django.shortcuts import render, Http404, HttpResponse
+from django.shortcuts import render, Http404, HttpResponse
+
+from django_filters import filterset
+from django_filters.views import FilterView
+from django_tables2.views import SingleTableMixin
 
 class CourseListView(ListView):
     model = Course
@@ -15,8 +19,9 @@ class CourseListView(ListView):
 
 
 #dummy model 
-from django_tables2 import SingleTableView
+from django_tables2 import SingleTableView, RequestConfig
 from django_tables2.export.views import ExportMixin
+
 from django_filters.views import FilterView
 from django_tables2.views import SingleTableMixin
 

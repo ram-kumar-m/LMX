@@ -1,9 +1,11 @@
-{% extends 'lms/lms_base.html' %}
+{% extends 'lms/course/gradebook/course_gradebook_base.html' %}
+
 {% load render_table from django_tables2 %}
+
 {% load bootstrap4 %}
-{% load crispy_forms_tags %}
 {% block content %}
 
+ 
 {% if filter %}
 <div class="row">
     <div class="col-sm-10">
@@ -18,5 +20,3 @@
 
 {% render_table table%}
 {% endblock content %}
- 
-

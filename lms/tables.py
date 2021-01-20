@@ -6,6 +6,7 @@ class DummyAssignmentTable(tables.Table):
     class Meta:
         model = DummyAssignment
         template_name = "django_tables2/bootstrap4.html"
+        
         fields = ('student__name', 'title', 'grade', 'alloted_mark', 'max_mark', 'student__email',)
 
 import django_filters
