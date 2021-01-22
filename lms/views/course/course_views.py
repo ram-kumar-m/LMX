@@ -32,7 +32,6 @@ class GradeBookCourseView(ExportMixin, SingleTableMixin, FilterView):
     filterset_class  = DummyAssignmentFilter
 
 
-
 # download csv file (django_tables2 method)
 def table_download(request):
     table = DummyAssignmentTable(DummyAssignment.objects.all())
@@ -47,4 +46,6 @@ def table_download(request):
     return render(request, "lms/course/gradebook/course_gradebook_export.html", {
         "table": table
     })
+
+
 

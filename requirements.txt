@@ -25,3 +25,4 @@ django_seed
 django-tables2
 tablib
 django-filter
+django-bootstrap4
