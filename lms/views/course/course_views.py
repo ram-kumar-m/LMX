@@ -32,7 +32,7 @@ class GradeBookCourseView(ExportMixin, SingleTableMixin, FilterView):
     model = DummyAssignment
     table_class = DummyAssignmentTable
     
-    template_name = 'lms\course\gradebook\course_gradebook.html'
+    template_name = 'lms/course/gradebook/course_gradebook.html'
     filterset_class  = DummyAssignmentFilter
 
 

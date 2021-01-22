@@ -52,8 +52,6 @@ INSTALLED_APPS = [
     # My apps
     'lms.apps.LmsConfig',
 
-    'django_filters',
-    'bootstrap4',
 ]
 
 AUTHENTICATION_BACKENDS = [
